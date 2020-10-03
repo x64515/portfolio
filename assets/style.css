@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive ;
+}
+header {
+    padding: 20px 35px;
+    background-color: Black;
+    padding-left: 0px;
+    
+  }
+  header h1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    background-color:#297c77 ;
+    margin: 0;
+    padding-left: 5%;
+    display: inline;
+  }
+  header a {
+    text-decoration: none;
+    color: #297c77;
+  }
+  header nav {
+    float: right;
+    margin: 15px;
+    position:relative;
+  }
+  header nav ul li {
+    display: inline;
+    
+  }
+  header nav ul li a {
+    margin: 0 10px;
+    font-weight: lighter;
+    font-size: 20px;
+    border-bottom: 2px solid #297c77;
+  }
+.boxA{
+    background-image: url("./images/pexels-photo-270360.jpeg");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.boxA p{
+    background-color: #297c77;
+    display: inline;
+    position: relative;
+    top: 270px;
+    left: 80%;
+    padding-left: 5px;
+    padding-right: 5px
+}
+.about-me{
+display:flex;
+margin:20px;
+}
+.about-me h2{
+    padding-left: 30px;
+    padding-right: 5px;
+    border-right: 2px solid black;
+}
+.about-me p{
+    padding-left:10px;
+    text-align: left;
+}
+.work{
+    display:flex; 
+    margin-bottom: 10px;
+    height:400px;
+  }
+.work h2{
+    padding-left: 56px;
+    padding-right: 5px;
+    text-align: right;
+    border-right: 2px solid black;
+}
+.grid{
+  margin-left:5px;
+  display:grid;
+  width: 600px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:"box1 box1 box1 box1 box4 box4"
+                      "box1 box1 box1 box1 box5 box5"
+                      "box2 box2 box3 box3 . .";
+}
+.grid-item{
+    border: 2px solid teal;
+    background-color: black;
+
+
+}
+.box1{
+   
+   grid-area: box1;
+}
+.box2{
+  grid-area:box2;
+}
+.box3{
+    grid-area:box3;
+  
+}.box4{
+  grid-area: box4;
+}
+.box5{
+    grid-area: box5
+
+}
+.grid-item span{
+  display:block;
+  height: 10%;
+  width:20%;
+  position: relative;
+  color: black;
+  background-color: #297c77;
+  align-content: center;
+}
+grid-item div h4{
+  text-align: left;
+  font-size: x-small;
+  height: 20;
+}
