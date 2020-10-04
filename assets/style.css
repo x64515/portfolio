@@ -6,7 +6,7 @@
 }
 header {
     padding: 20px 35px;
-    background-color: Black;
+    background-color: black;
     padding-left: 0px;
     
   }
@@ -17,6 +17,7 @@ header {
     background-color:#297c77 ;
     margin: 0;
     padding-left: 5%;
+    padding-right: 5px;
     display: inline;
   }
   header a {
@@ -61,6 +62,7 @@ margin:20px;
     padding-left: 30px;
     padding-right: 5px;
     border-right: 2px solid black;
+    text-align: right;
 }
 .about-me p{
     padding-left:10px;
@@ -70,6 +72,7 @@ margin:20px;
     display:flex; 
     margin-bottom: 10px;
     height:400px;
+  
   }
 .work h2{
     padding-left: 56px;
@@ -81,46 +84,69 @@ margin:20px;
   margin-left:5px;
   display:grid;
   width: 600px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: stretch;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
   grid-template-areas:"box1 box1 box1 box1 box4 box4"
                       "box1 box1 box1 box1 box5 box5"
                       "box2 box2 box3 box3 . .";
 }
 .grid-item{
     border: 2px solid teal;
+    margin:5px;
     background-color: black;
-
-
+    }
+.description{
+    color: black;
+    background-color:#297c77 ;
+    margin: 0;
+    padding:0;
+    height:30px;
+    width:60px;
+    align-content: center;
+    position: relative;
+    top:65%;
+    
+}
+.description p{
+  font-size: 7px;
 }
 .box1{
-   
+   background-image:url("./images/pexels-photo-531880.jpeg") ;
    grid-area: box1;
 }
 .box2{
   grid-area:box2;
+  background-image:url("./images/maxresdefault.jpg");
+}
+.box2 div, .box3 div, .box4 div, .box5 div{
+  position: relative;
+  top: 40%;
 }
 .box3{
     grid-area:box3;
+    background-image:url("./images/unnamed.jpg");
   
-}.box4{
+}
+.box4{
   grid-area: box4;
+  background-image:url("./images/25.jpg");
 }
 .box5{
-    grid-area: box5
-
+    grid-area: box5;
+    background-image:url("./images/binary.jpg");
 }
-.grid-item span{
-  display:block;
-  height: 10%;
-  width:20%;
-  position: relative;
-  color: black;
-  background-color: #297c77;
-  align-content: center;
+footer{
+  display:inline-flex;
+  height:100px;
 }
-grid-item div h4{
-  text-align: left;
-  font-size: x-small;
-  height: 20;
+footer h2{
+  align-self: flex-start;
+  text-align:right;
+  padding-left: 29px;
+  padding-right:5px;
+  border-right: 2px solid black;
+}
+footer a{
+  justify-content: center;
 }
